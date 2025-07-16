@@ -10,3 +10,6 @@ build/
 
 # Editor files
 .vscode/
+
+# MAC OS System File
+.DS_Store

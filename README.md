@@ -5,23 +5,13 @@
 ![Database](https://img.shields.io/badge/Database-MongoDB-green?style=flat-square)
 ![Deployment](https://img.shields.io/badge/Deployed-Vercel%20%7C%20Render-black?style=flat-square)
 
-## Screenshots
+ REPOINTER: Your All-in-One Coding Platform
 
-| Home Page                                        | Coding Page                                            |
-| ------------------------------------------       | ------------------------------------------------------ |
-| ![Home Screenshot](./screenshots/Homepage.png)   | ![Coding page Screenshot](./screenshots/Coding.png)    |
+![Frontend](https://img.shields.io/badge/Frontend-React-blue?style=flat-square)
+![Backend](https://img.shields.io/badge/Backend-Express.js-yellow?style=flat-square)
+![Database](https://img.shields.io/badge/Database-MongoDB-green?style=flat-square)
+![Deployment](https://img.shields.io/badge/Deployed-Vercel%20%7C%20Render-black?style=flat-square)
 
-| DSA Visualizer Page                              | Courses Page                                           |
-| ----------------------------------------------   | ------------------------------------------------       |
-| ![DSA Screenshot](./screenshots/Dsa.png)         | ![Courses Screenshot](./screenshots/Courses.png).      |
-
-| Admin Dashboard                                  | User Dashboardl                                        |
-| ------------------------------------------       | --------------------------------------------           |
-| ![User Screenshot](./screenshots/Admin.png)      | ![Admin Screenshot](./screenshots/User.png)            |
-
-> Place your screenshots in the `/screenshots` folder and update the image paths accordingly.
-
----
 
 ## About the Project
 
@@ -35,7 +25,39 @@ Main features include:
 * AI Assistant 
 * Tech Blogs and Updates
 
+
 ---
+
+## Screenshots
+
+| Home Page                                                                                                                                  | Coding Page                                                                                                                                    |
+| ------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| ![Home Screenshot](./docs/screenshots/Homepage.png)<br><sub>Landing page introducing the platform with navigation to major features.</sub> | ![Coding page Screenshot](./docs/screenshots/Coding.png)<br><sub>Write, test, and run code using an integrated editor powered by Judge0.</sub> |
+
+| DSA Visualizer Page                                                                                                                       | Courses Page                                                                                                                           |
+| ----------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| ![DSA Screenshot](./docs/screenshots/Dsa.png)<br><sub>Interactive visualizer to understand algorithms with step-by-step animations.</sub> | ![Courses Screenshot](./docs/screenshots/Courses.png)<br><sub>Structured modules to learn HTML, CSS, and other web technologies.</sub> |
+
+| Admin Dashboard                                                                                                              | User Dashboard                                                                                                               |
+| ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| ![User Screenshot](./docs/screenshots/Admin.png)<br><sub>Manage users, courses, and problems — admin has full control.</sub> | ![Admin Screenshot](./docs/screenshots/User.png)<br><sub>Track your progress, solved problems, and course completions.</sub> |
+
+\-----------|----------------|
+\| ![Home Screenshot](./screenshots/home.png) | ![Visualizer Screenshot](./screenshots/visualizer.png) |
+
+| Coding Arena                                   | Courses                                          |
+| ---------------------------------------------- | ------------------------------------------------ |
+| ![Coding Screenshot](./screenshots/coding.png) | ![Courses Screenshot](./screenshots/courses.png) |
+
+| User Dashboard                             | Admin Panel                                  |
+| ------------------------------------------ | -------------------------------------------- |
+| ![User Screenshot](./screenshots/user.png) | ![Admin Screenshot](./screenshots/admin.png) |
+
+
+
+---
+
+
 
 ## Project Structure
 
@@ -86,8 +108,8 @@ CODEHUB/
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/codehub.git
-cd codehub
+git clone https://github.com/your-username/repointer.git
+cd repointer
 ```
 
 ### Backend Setup
@@ -176,11 +198,14 @@ Then open a pull request for review.
 
 **Author**: Soumyadeep Bhowmik
 [LinkedIn](https://www.linkedin.com/in/soumyadeep2124)
-Email: [soumyadeep@example.com](mailto:mrbhowmik2124@gmailcom)
+[mrbhowmik2124@gmail.com](mailto:mrbhowmik2124@gmailcom)
 
 ---
 
 **Happy Coding!**
+
+
+
 
 
 
