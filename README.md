@@ -5,13 +5,19 @@
 ![Database](https://img.shields.io/badge/Database-MongoDB-green?style=flat-square)
 ![Deployment](https://img.shields.io/badge/Deployed-Vercel%20%7C%20Render-black?style=flat-square)
 
----
-
 ## Screenshots
 
-| Home Page                                  | DSA Visualizer                                         |
-| ------------------------------------------ | ------------------------------------------------------ |
-| ![Home Screenshot](./screenshots/home.png) | ![Visualizer Screenshot](./screenshots/visualizer.png) |
+| Home Page                                        | Coding Page                                            |
+| ------------------------------------------       | ------------------------------------------------------ |
+| ![Home Screenshot](./screenshots/Homepage.png)   | ![Coding page Screenshot](./screenshots/Coding.png)    |
+
+| DSA Visualizer Page                              | Courses Page                                           |
+| ----------------------------------------------   | ------------------------------------------------       |
+| ![DSA Screenshot](./screenshots/DSA.png)         | ![Courses Screenshot](./screenshots/Courses.png).      |
+
+| Admin Dashboard                                  | User Dashboardl                                        |
+| ------------------------------------------       | --------------------------------------------           |
+| ![User Screenshot](./screenshots/Admin.png)      | ![Admin Screenshot](./screenshots/User.png)            |
 
 > Place your screenshots in the `/screenshots` folder and update the image paths accordingly.
 
@@ -35,8 +41,8 @@ Main features include:
 
 ```bash
 CODEHUB/
-├── frontend/         # React + Vite frontend
-├── backend/          # Express.js backend with REST APIs
+├── client/           # (Frontend) React + Vite frontend
+├── backend/          # (Backend) Express.js backend with REST APIs
 ├── screenshots/      # UI images for README
 ├── .gitignore
 ├── .env.example
@@ -175,4 +181,6 @@ Email: [soumyadeep@example.com](mailto:mrbhowmik2124@gmailcom)
 ---
 
 **Happy Coding!**
+
+
 
