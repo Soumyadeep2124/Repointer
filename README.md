@@ -13,7 +13,7 @@
 
 | DSA Visualizer Page                              | Courses Page                                           |
 | ----------------------------------------------   | ------------------------------------------------       |
-| ![DSA Screenshot](./screenshots/DSA.png)         | ![Courses Screenshot](./screenshots/Courses.png).      |
+| ![DSA Screenshot](./screenshots/Dsa.png)         | ![Courses Screenshot](./screenshots/Courses.png).      |
 
 | Admin Dashboard                                  | User Dashboardl                                        |
 | ------------------------------------------       | --------------------------------------------           |
