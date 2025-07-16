@@ -5,13 +5,6 @@
 ![Database](https://img.shields.io/badge/Database-MongoDB-green?style=flat-square)
 ![Deployment](https://img.shields.io/badge/Deployed-Vercel%20%7C%20Render-black?style=flat-square)
 
- REPOINTER: Your All-in-One Coding Platform
-
-![Frontend](https://img.shields.io/badge/Frontend-React-blue?style=flat-square)
-![Backend](https://img.shields.io/badge/Backend-Express.js-yellow?style=flat-square)
-![Database](https://img.shields.io/badge/Database-MongoDB-green?style=flat-square)
-![Deployment](https://img.shields.io/badge/Deployed-Vercel%20%7C%20Render-black?style=flat-square)
-
 
 ## About the Project
 
@@ -30,28 +23,21 @@ Main features include:
 
 ## Screenshots
 
-| Home Page                                                                                                                                  | Coding Page                                                                                                                                    |
-| ------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![Home Screenshot](./docs/screenshots/Homepage.png)<br><sub>Landing page introducing the platform with navigation to major features.</sub> | ![Coding page Screenshot](./docs/screenshots/Coding.png)<br><sub>Write, test, and run code using an integrated editor powered by Judge0.</sub> |
+| Home Page                                             | Coding Page                                                 |
+| ----------------------------------------------------- | ------------------------------------------------------------ |
+| ![Home Screenshot](./docs/screenshots/Homepage.png)<br><br><strong>Landing page introducing the entire platform and guiding users to key features like courses, coding arena, and visualizer.</strong> | ![Coding page Screenshot](./docs/screenshots/Coding.png)<br><br><strong>Full-featured coding interface to write, test, and submit solutions with support from Judge0 API.</strong> |
 
-| DSA Visualizer Page                                                                                                                       | Courses Page                                                                                                                           |
-| ----------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| ![DSA Screenshot](./docs/screenshots/Dsa.png)<br><sub>Interactive visualizer to understand algorithms with step-by-step animations.</sub> | ![Courses Screenshot](./docs/screenshots/Courses.png)<br><sub>Structured modules to learn HTML, CSS, and other web technologies.</sub> |
+<br><br>
 
-| Admin Dashboard                                                                                                              | User Dashboard                                                                                                               |
-| ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| ![User Screenshot](./docs/screenshots/Admin.png)<br><sub>Manage users, courses, and problems — admin has full control.</sub> | ![Admin Screenshot](./docs/screenshots/User.png)<br><sub>Track your progress, solved problems, and course completions.</sub> |
+| DSA Visualizer Page                                   | Courses Page                                                |
+| ----------------------------------------------------- | ------------------------------------------------------------ |
+| ![DSA Screenshot](./docs/screenshots/Dsa.png)<br><br><strong>Step-by-step animated DSA visualizations to intuitively understand algorithms like sorting and searching.</strong> | ![Courses Screenshot](./docs/screenshots/Courses.png)<br><br><strong>Organized and modular course interface to learn HTML, CSS, and more with progress tracking.</strong> |
 
-\-----------|----------------|
-\| ![Home Screenshot](./screenshots/home.png) | ![Visualizer Screenshot](./screenshots/visualizer.png) |
+<br><br>
 
-| Coding Arena                                   | Courses                                          |
-| ---------------------------------------------- | ------------------------------------------------ |
-| ![Coding Screenshot](./screenshots/coding.png) | ![Courses Screenshot](./screenshots/courses.png) |
-
-| User Dashboard                             | Admin Panel                                  |
-| ------------------------------------------ | -------------------------------------------- |
-| ![User Screenshot](./screenshots/user.png) | ![Admin Screenshot](./screenshots/admin.png) |
+| Admin Dashboard                                       | User Dashboard                                              |
+| ----------------------------------------------------- | ------------------------------------------------------------ |
+| ![User Screenshot](./docs/screenshots/Admin.png)<br><br><strong>Powerful admin control panel to manage users, problems, courses, and submissions across the platform.</strong> | ![Admin Screenshot](./docs/screenshots/User.png)<br><br><strong>User-centric dashboard showing performance metrics, completed modules, streaks, and solved problems.</strong> |
 
 
 
