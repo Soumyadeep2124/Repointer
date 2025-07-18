@@ -36,47 +36,48 @@ const WelcomeSection = () => {
                   </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10 mx-10">
-            {[
-              {
-                icon: assets.Course_Logo,
-                title: "Interactive Courses",
-                desc: "Learn with video lessons, quizzes, and real-time progress tracking",
-                bg: "bg-[#2a2617]",
-                color: "border-yellow-500",
-                borderShadow: "hover:shadow-[0_0_20px_5px_rgba(253,224,71,0.4)]",
-                titleHover: "group-hover:text-yellow-500",
-                path: "/coursespage"
-              },
-              {
-                icon: assets.DSA_Logo,
-                title: "DSA Visualizer",
-                desc: "Understand algorithms with step-by-step animated visuals",
-                bg: "bg-[#1b1532]",
-                color: "border-purple-500",
-                borderShadow: "hover:shadow-[0_0_20px_5px_rgba(168,85,247,0.4)]",
-                titleHover: "group-hover:text-purple-300",
-                path: "/dsaPage"
-              },
-              {
-                icon: assets.Coding_Logo,
-                title: "Coding Platform",
-                desc: "Practice, compete, and level up your coding skills",
-                color: "border-green-500",
-                borderShadow: "hover:shadow-[0px_0px_20px_5px_rgba(34,197,94,0.2)]",
-                titleHover: "group-hover:text-green-400",
-                path: "/codingpage"
-              }
-            ].map((item, idx) => (
-              <NavLink to={`${item.path}`}>
-              <div key={idx} data-aos="fade-up" className={`group bg-[#12131f] rounded-2xl p-5 shadow-lg border-b-2 transition-all duration-300 transform hover:scale-[1.02] animate-bounce-1 ${item.color} ${item.borderShadow}`} >
-                <div className={`w-15 h-15 rounded-2xl mx-auto flex items-center justify-center text-white mb-4 text-xl ${item.color} duration-300 transform group-hover:rotate-6 group-hover:scale-[1.1]`}>
-                  <img src={item.icon} alt="icon" className="w-15 h-15 rounded-2xl" /></div>
-                <h3 className={`font-bold text-xl text-center pb-1 text-white transition-all transform duration-300 group-hover:scale-[1.05] ${item.titleHover}`}>{item.title}</h3>
-                <p className="text-sm font-light text-center text-white/60">{item.desc}</p>
-              </div>
-              </NavLink>
-            ))}
-            
+           {[
+  {
+    icon: assets.Course_Logo,
+    title: "Interactive Courses",
+    desc: "Learn with video lessons, quizzes, and real-time progress tracking",
+    bg: "bg-[#2a2617]",
+    color: "border-yellow-500",
+    borderShadow: "hover:shadow-[0_0_20px_5px_rgba(253,224,71,0.4)]",
+    titleHover: "group-hover:text-yellow-500",
+    path: "/coursespage"
+  },
+  {
+    icon: assets.DSA_Logo,
+    title: "DSA Visualizer",
+    desc: "Understand algorithms with step-by-step animated visuals",
+    bg: "bg-[#1b1532]",
+    color: "border-purple-500",
+    borderShadow: "hover:shadow-[0_0_20px_5px_rgba(168,85,247,0.4)]",
+    titleHover: "group-hover:text-purple-300",
+    path: "/dsaPage"
+  },
+  {
+    icon: assets.Coding_Logo,
+    title: "Coding Platform",
+    desc: "Practice, compete, and level up your coding skills",
+    color: "border-green-500",
+    borderShadow: "hover:shadow-[0px_0px_20px_5px_rgba(34,197,94,0.2)]",
+    titleHover: "group-hover:text-green-400",
+    path: "/codingpage"
+  }
+].map((item, idx) => (
+  <NavLink key={idx} to={`${item.path}`}>
+    <div data-aos="fade-up" className={`group bg-[#12131f] rounded-2xl p-5 shadow-lg border-b-2 transition-all duration-300 transform hover:scale-[1.02] animate-bounce-1 ${item.color} ${item.borderShadow}`} >
+      <div className={`w-15 h-15 rounded-2xl mx-auto flex items-center justify-center text-white mb-4 text-xl ${item.color} duration-300 transform group-hover:rotate-6 group-hover:scale-[1.1]`}>
+        <img src={item.icon} alt="icon" className="w-15 h-15 rounded-2xl" />
+      </div>
+      <h3 className={`font-bold text-xl text-center pb-1 text-white transition-all transform duration-300 group-hover:scale-[1.05] ${item.titleHover}`}>{item.title}</h3>
+      <p className="text-sm font-light text-center text-white/60">{item.desc}</p>
+    </div>
+  </NavLink>
+))}
+
           </div>
         </div>
       </div>
