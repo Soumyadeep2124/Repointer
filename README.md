@@ -18,6 +18,7 @@ Main features include:
 * AI Assistant 
 * Tech Blogs and Updates
 
+## Live Deployed Link: https://repointer-client.onrender.com
 
 ---
 
