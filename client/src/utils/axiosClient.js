@@ -1,7 +1,7 @@
 import axios from "axios"
 
 const axiosClient =  axios.create({
-    baseURL: 'https://www.repointer.in',
+    baseURL: 'https://repointer-server.onrender.com',
     withCredentials: true,
     headers: {
         'Content-Type': 'application/json'
