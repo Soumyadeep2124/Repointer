@@ -14,7 +14,7 @@ const cors = require('cors')
 // console.log("Hello")
 
 app.use(cors({
-    origin: 'https://repointer-client.onrender.com',
+    origin: 'https://repointer.com',
     credentials: true 
 }))
 
