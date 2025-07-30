@@ -3,7 +3,7 @@ import { NavLink } from 'react-router';
 import { useDispatch, useSelector } from 'react-redux';
 import axiosClient from '../../utils/axiosClient';
 import { logoutUser } from '../../authSlice';
-import { FiUsers, FiStar, FiShare2, FiBookmark, FiCheckCircle, FiClock, FiTarget } from "react-icons/fi";
+import { FiUsers, FiStar, FiShare2, FiBookmark, FiClock } from "react-icons/fi";
 
 
 function ProblemList() {
@@ -66,9 +66,9 @@ function ProblemList() {
 
   const getIcon = (difficulty) => {
     switch (difficulty.toLowerCase()) {
-      case 'easy': return <FiCheckCircle className="text-green-500" />;
-      case 'medium': return <FiTarget className="text-gray-300" />;
-      case 'hard': return <FiClock className="text-orange-400" />;
+      case 'easy': return <FiClock className="text-green-500" />;
+      case 'medium': return <FiClock className="text-yellow-500" />;
+      case 'hard': return <FiClock className="text-red-500" />;
       default: return <FiUsers />;
     }
   };
@@ -99,30 +99,38 @@ function ProblemList() {
           <option value="hard">Hard</option>
         </select>
 
-        <select 
-          className="select select-bordered"
-          value={filters.tag}
-          onChange={(e) => setFilters({...filters, tag: e.target.value})}
-        >
-          <option value="all">All Tags</option>
-          <option value="array">Array</option>
-          <option value="linkedList">Linked List</option>
-          <option value="graph">Graph</option>
-          <option value="dp">DP</option>
-        </select>
+       <select 
+  className="select select-bordered"
+  value={filters.tag}
+  onChange={(e) => setFilters({ ...filters, tag: e.target.value })}
+>
+  <option value="all">All Tags</option>
+  <option value="array">Array</option>
+  <option value="string">String</option>
+  <option value="linkedList">Linked List</option>
+  <option value="stack">Stack</option>
+  <option value="tree">Tree</option>
+  <option value="graph">Graph</option>
+  <option value="dp">DP</option>
+  <option value="greedy">Greedy</option>
+  <option value="recursion">Recursion</option>
+  <option value="slidingWindow">Sliding Window</option>
+</select>
+
+
       </div>
 
       {/* Problem List */}
       {filteredProblems.map((problem, index) => (
 
         
-        <div key={problem._id} className="bg-[#12141c] border border-gray-700 rounded-xl p-6 space-y-3">
+        <div key={problem._id} className="bg-[#12141c] border border-gray-700 rounded-xl p-6 mb-5">
           <div className="flex justify-between items-start">
             <div className="flex items-start gap-3">
               <div className="pt-1">{getIcon(problem.difficulty)}</div>
               <div>
                 <h3 className="text-lg font-semibold flex items-center gap-3">
-                  <NavLink to={`/problem/${problem._id}`} className="hover:text-primary">
+                  <NavLink to={`/problem/${problem._id}`} className="hover:text-orange-500">
                     {problem.title}
                   </NavLink>
                   <span className={`text-xs bg-$
@@ -137,10 +145,11 @@ function ProblemList() {
                     {problem.tags}
                   </span>
                 </h3>
-                <p className="text-gray-400 text-sm mt-1">{problem.description || "A coding problem to solve."}</p>
               </div>
+              
             </div>
-            <div className="flex flex-col items-end gap-2">
+            
+            <div className="flex flex-col items-end gap-2 ">
               <NavLink to={`/problem/${problem._id}`}>
                <button className={`text-white text-sm font-semibold px-3 py-1 rounded-md ${solvedProblems.some(sp => sp._id === problem._id) ? "bg-green-500" : "bg-orange-500"}`}>
                 {solvedProblems.some(sp => sp._id === problem._id) ? "✓ Solved" : "Solve"}
@@ -151,17 +160,17 @@ function ProblemList() {
                 <FiShare2 className="cursor-pointer" />
               </div>
             </div>
+            
           </div>
 
-          <div className="text-gray-400 text-xs flex gap-6 pt-2 items-center">
+          <div className="text-gray-400 text-xs flex gap-6 pt-2 items-center ">
+          <p className="text-gray-400 text-sm">{problem.description || "A coding problem to solve."}</p>
+
             <div className="flex items-center gap-1">
               <FiUsers /> Acceptance: {problem.submissions > 0 ? `${((problem.correctSubmissions / problem.submissions) * 100).toFixed(1)}%` : "N/A"}
             </div>
             <div className="flex items-center gap-1">
               <FiUsers /> {problem.submissions || "Unknown"} submissions
-            </div>
-            <div className="flex items-center gap-1">
-              <FiStar /> {problem.likes || 0} likes
             </div>
           </div>
 

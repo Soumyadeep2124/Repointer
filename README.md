@@ -196,3 +196,59 @@ Then open a pull request for review.
 
 
 
+{
+    "title": "Find Maximum in stack",
+    "description": "Write a program that takes an array of integers and returns the maximum value.",
+    "difficulty": "easy",
+    "tags": "array",
+    "visibleTestCases": [
+        {
+            "input": "5\n1 2 3 4 5",
+            "output": "5",
+            "explanation": "The maximum value among 1 2 3 4 5 is 5"
+        },
+        {
+            "input": "6\n-2 -1 0 -5 3 2",
+            "output": "3",
+            "explanation": "3 is the highest number"
+        }
+    ],
+    "hiddenTestCases": [
+        {
+            "input": "4\n100 250 199 300",
+            "output": "300"
+        },
+        {
+            "input": "3\n-100 -300 -50",
+            "output": "-50"
+        }
+    ],
+    "startCode": [
+        {
+            "language": "C++",
+            "initialCode": "#include <iostream>\nusing namespace std;\n\nint main() {\n    int n;\n    // Read n and array\n    // Output the maximum number\n    return 0;\n}"
+        },
+        {
+            "language": "Java",
+            "initialCode": "import java.util.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Read input and find maximum\n    }\n}"
+        },
+        {
+            "language": "JavaScript",
+            "initialCode": "const fs = require('fs');\nconst input = fs.readFileSync(0, 'utf-8').trim().split('\\n');\n\n// Process input and print maximum"
+        }
+    ],
+    "referenceSolution": [
+        {
+            "language": "C++",
+            "completeCode": "#include <iostream>\n#include <climits>\nusing namespace std;\n\nint main() {\n    int n;\n    cin >> n;\n    int maxVal = -2147483647 - 1; ;\n  int x;\n   for(int i = 0; i < n; i++) {\n        cin >> x;\n        if(x > maxVal) maxVal = x;\n    }\n    cout << maxVal;\n    return 0;\n}"
+        },
+        {
+            "language": "Java",
+            "completeCode": "import java.util.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        int n = sc.nextInt();\n        int max = Integer.MIN_VALUE;\n        for(int i = 0; i < n; i++) {\n            int x = sc.nextInt();\n            if(x > max) max = x;\n        }\n        System.out.println(max);\n    }\n}"
+        },
+        {
+            "language": "JavaScript",
+            "completeCode": "const fs = require('fs');\nconst input = fs.readFileSync(0, 'utf-8').trim().split('\\n');\nconst n = Number(input[0]);\nconst arr = input[1].split(' ').map(Number);\nconsole.log(Math.max(...arr));"
+        }
+    ]
+}

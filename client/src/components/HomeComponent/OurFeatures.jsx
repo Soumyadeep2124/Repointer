@@ -127,7 +127,7 @@ const OurFeatures = () => {
   return (
     <div>
     <div>
-        <h3 className="text-5xl font-bold pt-4 mb-4 mx-auto flex justify-center">Why Choose LearnHub</h3>
+        <h3 className="text-5xl font-bold pt-4 mb-4 mx-auto flex justify-center">Why Choose Repointer</h3>
         <p className="text-xl text-white/70 mb-15 flex justify-center">Discover the advanced features that make our learning platform exceptional</p>
     </div>
     

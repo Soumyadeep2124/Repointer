@@ -15,11 +15,22 @@ const problemSchema = new Schema({
         enum:['easy','medium','hard'],
         required:true,
     },
-    tags:{
-        type:[String],
-        enum:['array','linkedList','graph','dp'],
-        required:true
-    },
+    tags: {
+  type: [String],
+  enum: [
+    'array',
+    'string',
+    'linkedList',
+    'stack',
+    'tree',
+    'graph',
+    'dp',
+    'greedy',
+    'recursion',
+    'slidingWindow'
+  ],
+  required: true
+},
     visibleTestCases:[
         {
             input:{
@@ -94,8 +105,8 @@ const problemSchema = new Schema({
     default: 0,
     },
     companies: {
-    type: [String], // 👈 Array of strings
-    default: [],    // Optional: default to empty array
+    type: [String],
+    default: [],    
   },
 
 })
@@ -104,5 +115,6 @@ const problemSchema = new Schema({
 const Problem = mongoose.model('problem',problemSchema);
 
 module.exports = Problem;
+
 
 
